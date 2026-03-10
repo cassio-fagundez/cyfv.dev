@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Cassio Fagúndez - Fullstack Developer Jr y QA Analyst">
+  <title>Cassio Fagúndez | Portfolio</title>
+  <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Selector de idioma & tema -->
+  <header class="site-header">
+    <div class="header-actions">
+      <div class="header-left">
+        <label class="theme-switch" for="theme-toggle">
+          <input type="checkbox" id="theme-toggle" class="theme-switch-input" aria-label="Modo claro/oscuro">
+          <span class="theme-switch-track" aria-hidden="true">
+            <span class="theme-switch-icon theme-switch-icon-moon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+            <span class="theme-switch-icon theme-switch-icon-sun" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </span>
+          </span>
+        </label>
+      </div>
+      <a href="#profile" class="header-logo" aria-label="Inicio">
+        <img src="assets/MYLOGO.png" alt="" width="50" height="50">
+      </a>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+          <button type="button" class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Profile -->
+    <section class="profile" id="profile">
+      <div class="profile-content">
+        <div class="profile-photo-wrap">
+          <img src="assets/photo.jpg" alt="Cassio Fagúndez" class="profile-photo" width="200" height="200">
+        </div>
+        <h1 class="profile-name">Cassio Fagúndez</h1>
+        <div class="profile-tags">
+          <div class="profile-tags-row profile-tags-roles">
+            <span class="tag">Fullstack Developer Jr</span>
+            <span class="tag">QA Analyst / Tester Jr</span>
+          </div>
+        </div>
+        <a id="cv-download-link" href="assets/CV/cv-es.pdf" class="btn btn-primary btn-cv" download>
+          <span data-i18n="download-cv">Descargar CV</span>
+          <span class="btn-cv-lang" data-i18n="download-cv-lang">en español</span>
+        </a>
+        <div class="profile-links">
+          <a href="https://www.linkedin.com/in/cassio-fagundez" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/cassio-fagundez" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about-title">Sobre mí</h2>
+        <div class="about-content">
+          <p class="about-text" data-i18n="about-p1">Soy Software Developer Jr y QA Analyst / Tester Jr, egresado como Tecnólogo en Análisis y Desarrollo de Sistemas.</p>
+          <p class="about-text" data-i18n="about-p2">Tengo experiencia académica trabajando en todas las etapas del desarrollo de software, incluyendo programación, bases de datos, testing y el análisis previo. Aunque he trabajado en proyectos fullstack, me interesa especialmente el desarrollo backend y la calidad del software.</p>
+          <p class="about-text" data-i18n="about-p3">Me considero una persona analítica, detallista y orientada a construir aplicaciones confiables. Actualmente busco oportunidades junior o trainee donde pueda seguir aprendiendo, mejorar mis habilidades técnicas y contribuir al desarrollo de software de calidad.</p>
+          <p class="about-text"><span data-i18n="about-contact-before"></span><span class="about-email">cyfv.work@gmail.com</span><span data-i18n="about-contact-middle"></span><a href="#contact" data-i18n="about-contact-link" class="about-contact-link"></a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume: Educación y Experiencia -->
+    <section class="section resume" id="resume">
+      <div class="container">
+        <h2 class="section-title" data-i18n="resume-title">Currículum</h2>
+
+        <div class="timeline-block">
+          <h3 class="timeline-heading" data-i18n="experience-title">Experiencia laboral</h3>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="exp2-date">Presente</span>
+                <h4 class="timeline-title" data-i18n="exp2-title">En búsqueda de empleo</h4>
+                <p class="timeline-desc" data-i18n="exp2-desc">Abierto a ofertas laborales.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="exp1-date">dic. 2020 — abr. 2021 (5 meses)</span>
+                <h4 class="timeline-title" data-i18n="exp1-title">Trainee Back-end — NTConsult</h4>
+                <p class="timeline-desc" data-i18n="exp1-desc">• Formación práctica en Java y fundamentos de C#, enfocada en lógica de programación y buenas prácticas de desarrollo.
+• Uso de Git y GitHub para control de versiones durante el proceso de aprendizaje.
+• Participación en instancias de seguimiento semanales con prácticas ágiles.
+• Trabajo remoto con equipos de Brasil, utilizando portugués en la comunicación diaria.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="timeline-block">
+          <h3 class="timeline-heading" data-i18n="education-title">Estudios</h3>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="edu4-date">2025</span>
+                <h4 class="timeline-title" data-i18n="edu4-title">Testing de Software — Jóvenes a Programar | Ceibal</h4>
+                <p class="timeline-desc" data-i18n="edu4-desc">Formación en testing de software, incluyendo testing manual, diseño de casos de prueba y reporte de bugs, complementada con competencias transversales e inglés orientado al ámbito profesional.
+Capacitado como QA Analyst / Tester Jr.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="edu2-date">2018 — 2024</span>
+                <h4 class="timeline-title" data-i18n="edu2-title">Tecnólogo en Análisis y Desarrollo de Sistemas — UTEC 🇺🇾 | IFSUL 🇧🇷</h4>
+                <p class="timeline-desc" data-i18n="edu2-desc">Carrera binacional enfocada en desarrollo de software, bases de datos, análisis de sistemas y ciclo de vida del software.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="edu1-date">2015 — 2017</span>
+                <h4 class="timeline-title" data-i18n="edu1-title">Bachillerato en Informática — UTU</h4>
+                <p class="timeline-desc" data-i18n="edu1-desc">Formación técnica orientada al desarrollo de software, con énfasis en programación, bases de datos, sistemas operativos y análisis y diseño de aplicaciones.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Proyectos -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portfolio-title">Portfolio</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-project-theme-aware="true" data-project-github="https://github.com/cassio-fagundez/Portfolio" data-project-desc-long-key="proj3-desc-long" data-project-date-key="proj3-date" data-project-images='["assets/projects/proyecto3-1.jpg","assets/projects/proyecto3-2.jpg"]'>
+            <div class="project-image-wrap">
+              <img src="assets/projects/proyecto3-1.jpg" alt="Personal Portfolio Website" class="project-image project-img-dark">
+              <img src="assets/projects/proyecto3-2.jpg" alt="Personal Portfolio Website" class="project-image project-img-light">
+            </div>
+            <div class="project-info">
+              <span class="project-date" data-i18n="proj3-date">2024</span>
+              <h3 class="project-title" data-i18n="proj3-title">Proyecto ejemplo 3</h3>
+              <p class="project-desc" data-i18n="proj3-desc">Tercer proyecto de ejemplo.</p>
+              <button type="button" class="btn btn-outline btn-ver-mas" data-i18n="saber-mas">Saber más</button>
+            </div>
+          </article>
+          <article class="project-card" data-project-github="https://github.com/cassio-fagundez" data-project-desc-long-key="proj2-desc-long" data-project-date-key="proj2-date" data-project-images='["assets/projects/proyecto2-1.jpg","assets/projects/proyecto2-2.jpg","assets/projects/proyecto2-3.jpg","assets/projects/proyecto2-4.jpg","assets/projects/proyecto2-5.jpg"]'>
+            <div class="project-image-wrap">
+              <img src="assets/projects/proyecto2-1.jpg" alt="Veterinaria Guau Guau" class="project-image">
+            </div>
+            <div class="project-info">
+              <span class="project-date" data-i18n="proj2-date">2024</span>
+              <h3 class="project-title" data-i18n="proj2-title">EventLink</h3>
+              <p class="project-desc" data-i18n="proj2-desc">App móvil para difusión de eventos</p>
+              <button type="button" class="btn btn-outline btn-ver-mas" data-i18n="saber-mas">Saber más</button>
+            </div>
+          </article>
+          <article class="project-card" data-project-github="https://github.com/cassio-fagundez/ProjetoEventLink" data-project-desc-long-key="proj1-desc-long" data-project-date-key="proj1-date" data-project-images='["assets/projects/proyecto1-1.jpg","assets/projects/proyecto1-2.jpg","assets/projects/proyecto1-3.jpg","assets/projects/proyecto1-4.jpg","assets/projects/proyecto1-5.jpg"]'>
+            <div class="project-image-wrap">
+              <img src="assets/projects/proyecto1-1.jpg" alt="EventLink" class="project-image">
+            </div>
+            <div class="project-info">
+              <span class="project-date" data-i18n="proj1-date">2023</span>
+              <h3 class="project-title" data-i18n="proj1-title">App de gestión de solicitudes</h3>
+              <p class="project-desc" data-i18n="proj1-desc">Trabajo WEB II</p>
+              <button type="button" class="btn btn-outline btn-ver-mas" data-i18n="saber-mas">Saber más</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact-title">Contacto</h2>
+        <p class="contact-intro" data-i18n="contact-intro">Completa el formulario y me pondré en contacto contigo.</p>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/cyfv.work@gmail.com" method="POST">
+          <input type="hidden" name="_subject" id="fs-subject" value="PORTFOLIO — ">
+          <div class="form-group required">
+            <label for="name" data-i18n="form-name">Nombre</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group required">
+            <label for="email" data-i18n="form-email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group required">
+            <label for="subject" data-i18n="form-subject">Asunto</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group required">
+            <label for="message" data-i18n="form-message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="form-submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">© <span id="current-year"></span> Cassio Fagúndez</p>
+  </footer>
+
+  <!-- Modal proyecto -->
+  <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" hidden>
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <button type="button" class="project-modal-close" data-i18n-aria="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="project-modal-carousel">
+        <button type="button" class="project-modal-prev" data-i18n-aria="modal-prev" aria-label="Anterior">&lsaquo;</button>
+        <div class="project-modal-image-wrap">
+          <img id="project-modal-img" src="" alt="" class="project-modal-image">
+        </div>
+        <button type="button" class="project-modal-next" data-i18n-aria="modal-next" aria-label="Siguiente">&rsaquo;</button>
+      </div>
+      <p class="project-modal-counter"><span id="project-modal-current">1</span> / <span id="project-modal-total">1</span></p>
+      <p id="project-modal-date" class="project-modal-date"></p>
+      <h2 id="project-modal-title" class="project-modal-title"></h2>
+      <p id="project-modal-desc" class="project-modal-desc"></p>
+      <a id="project-modal-github" href="https://github.com/cassio-fagundez" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="modal-ver-github">Ver en GitHub</a>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
