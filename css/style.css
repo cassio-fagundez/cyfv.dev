@@ -589,6 +589,189 @@ body.theme-light .project-image-wrap .project-img-light {
   align-self: flex-start;
 }
 
+/* ===== Project detail pages ===== */
+.project-page {
+  padding: var(--space-3xl) 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--text-muted);
+  border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+  border-bottom-color: rgba(99, 102, 241, 0.4);
+}
+
+.project-hero {
+  max-width: 860px;
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.project-hero .project-title-xl {
+  margin: 0 0 var(--space-sm);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.project-hero .project-subtitle {
+  margin: 0 0 var(--space-lg);
+  color: var(--text-muted);
+  font-size: 1.0625rem;
+}
+
+.project-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.project-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-xl);
+}
+
+.project-panel-title {
+  margin: 0 0 var(--space-md);
+  font-size: 1.125rem;
+  font-weight: 650;
+}
+
+.project-long-desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.03rem;
+}
+
+.project-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+
+.project-list li + li {
+  margin-top: var(--space-sm);
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chip {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.screenshot {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.screenshot-caption {
+  padding: var(--space-md);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-top: auto;
+}
+
+.documentation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.documentation-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  object-fit: contain;
+  display: block;
+}
+
+.documentation-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.documentation-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text);
+  text-decoration: none;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.documentation-link:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.documentation-link svg {
+  flex-shrink: 0;
+}
+
 /* ===== Modal proyecto ===== */
 .project-modal {
   position: fixed;
@@ -852,6 +1035,18 @@ body.theme-light .project-image-wrap .project-img-light {
     gap: var(--space-lg);
   }
 
+  .project-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .documentation-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-form .btn {
     width: 100%;
   }
@@ -872,4 +1067,21 @@ body.theme-light .project-image-wrap .project-img-light {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--accent);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 145%;
+  left: 0;
+  top: 0;
+  border: 0;
 }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website — Detalle del proyecto">
+  <title>Portfolio | Cassio Fagúndez</title>
+  <link rel="icon" href="../../assets/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-actions">
+      <div class="header-left">
+        <label class="theme-switch" for="theme-toggle">
+          <input type="checkbox" id="theme-toggle" class="theme-switch-input" aria-label="Modo claro/oscuro">
+          <span class="theme-switch-track" aria-hidden="true">
+            <span class="theme-switch-icon theme-switch-icon-moon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+            <span class="theme-switch-icon theme-switch-icon-sun" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </span>
+          </span>
+        </label>
+      </div>
+      <a href="../../index.html" class="header-logo" aria-label="Inicio">
+        <img src="../../assets/MYLOGO.png" alt="" width="50" height="50">
+      </a>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+          <button type="button" class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-page">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html#portfolio" data-i18n="back-to-portfolio">← Volver al portfolio</a>
+        </nav>
+
+        <div class="project-hero">
+          <h1 class="project-title-xl" Personal Portfolio Website>Personal Portfolio Website</h1>
+          <p class="project-subtitle" 2026 — FullStack Developer>2026 — FullStack Developer</p>
+          <div class="project-hero-actions">
+            <a class="btn btn-primary" href="https://github.com/cassio-fagundez/cyfv.dev" target="_blank" rel="noopener noreferrer" data-i18n="project-link-source">Código fuente</a>
+            <a class="btn btn-outline" href="../../index.html" data-i18n="project-link-live">Ver live</a>
+          </div>
+        </div>
+
+        <div class="project-detail-grid">
+          <article class="project-panel">
+            <h2 class="project-panel-title" data-i18n="summary-title">1. Resumen del Proyecto</h2>
+            <p data-i18n="proj3-summary-p1">Este portfolio personal es el sitio web que estás navegando actualmente. Desarrollado con HTML5, CSS3 y JavaScript vanilla sin frameworks externos. Un proyecto simple para mostrar mis habilidades y experiencia de forma clara y accesible.</p>
+            
+            <hr style="margin: var(--space-lg) 0; border: none; border-top: 1px solid var(--color-border); opacity: 0.5;">
+            
+            <h2 class="project-panel-title" data-i18n="proj3-features-title">2. Funcionalidades</h2>
+            <ul>
+              <li><strong data-i18n="proj3-i18n-label">Multi-idioma:</strong> <span data-i18n="proj3-feature-i18n">Soporte para Español, Portugués e Inglés con detección automática del navegador.</span></li>
+              <li><strong data-i18n="proj3-theme-label">Tema Claro/Oscuro:</strong> <span data-i18n="proj3-feature-theme">Sistema de temas con persistencia de preferencias.</span></li>
+              <li><strong data-i18n="proj3-responsive-label">Diseño Responsivo:</strong> <span data-i18n="proj3-feature-responsive">Adaptación a diferentes dispositivos.</span></li>
+              <li><strong data-i18n="proj3-contact-label">Formulario de Contacto:</strong> <span data-i18n="proj3-feature-contact">Formulario funcional con FormSubmit.</span></li>
+              <li><strong data-i18n="proj3-portfolio-label">Portfolio Dinámico:</strong> <span data-i18n="proj3-feature-portfolio">Modales para visualizar detalles de proyectos.</span></li>
+            </ul>
+          </article>
+
+          <div class="sidebar-container">
+            <aside class="project-panel">
+              <h2 class="project-panel-title" data-i18n="role-title">Mi rol</h2>
+              <p class="project-long-desc" FullStack Developer>FullStack Developer</p>
+
+              <hr style="margin: var(--space-lg) 0; border: none; border-top: 1px solid var(--color-border); opacity: 0.5;">
+
+              <h2 class="project-panel-title" data-i18n="context-title">Contexto</h2>
+              <p class="project-long-desc" data-i18n="proj3-context-desc">Proyecto personal de portfolio profesional.</p>
+
+              <hr style="margin: var(--space-lg) 0; border: none; border-top: 1px solid var(--color-border); opacity: 0.5;">
+
+              <h2 class="project-panel-title" data-i18n="tech-title">Tecnologías</h2>
+              <div class="tech-chips" aria-label="Tecnologías">
+                <span class="chip" HTML5>HTML5</span>
+                <span class="chip" CSS3>CSS3</span>
+                <span class="chip" JavaScript>JavaScript</span>
+                <span class="chip" GitHub Pages>GitHub Pages</span>
+                <span class="chip">FormSubmit</span>
+                <span class="chip">Visual Studio Code</span>
+                <span class="chip">Windsurf</span>
+              </div>
+
+              <hr style="margin: var(--space-lg) 0; border: none; border-top: 1px solid var(--color-border); opacity: 0.5;">
+
+              <h2 class="project-panel-title" data-i18n="proj1-tasks-title">Algunas de mis tareas</h2>
+              <ul class="project-list">
+                <li data-i18n="proj3-task-1">Desarrollo frontend</li>
+                <li data-i18n="proj3-task-2">Sistema multi-idioma</li>
+                <li data-i18n="proj3-task-3">Sistema de temas</li>
+                <li data-i18n="proj3-task-4">Componentes reutilizables</li>
+                <li data-i18n="proj3-task-5">Formulario de contacto</li>
+                <li data-i18n="proj3-task-6">Diseño responsivo</li>
+                <li data-i18n="proj3-task-7">Testing básico</li>
+              </ul>
+
+            </aside>
+          </div>
+        </div>
+
+        <div style="height: var(--space-2xl)"></div>
+
+        <section class="project-panel">
+          <h2 class="project-panel-title" data-i18n="gallery-title">Galería</h2>
+          <div class="screenshots-grid">
+            <figure class="screenshot">
+              <img src="img/proyecto3-1.jpg" alt="Vista en tema claro" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-1">Vista en tema claro.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-2.jpg" alt="Vista en tema oscuro" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-2">Vista en tema oscuro.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-3.jpg" alt="Página principal con tema claro e idioma español" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-3">Página principal con tema claro e idioma español.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-4.jpg" alt="Página principal con tema oscuro e idioma inglés" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-4">Página principal con tema oscuro e idioma inglés.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-5.jpg" alt="Página de contacto exitoso en tema claro e idioma inglés" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-5">Página de contacto exitoso en tema claro e idioma inglés.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-6.jpg" alt="Página de contacto exitoso en tema oscuro e idioma portugués" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-6">Página de contacto exitoso en tema oscuro e idioma portugués.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-7.jpg" alt="Página de proyecto de desarrollo en tema claro e idioma portugués" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-7">Página de proyecto de desarrollo en tema claro e idioma portugués.</figcaption>
+            </figure>
+            <figure class="screenshot">
+              <img src="img/proyecto3-8.jpg" alt="Página de proyecto de testing en tema oscuro e idioma español" loading="lazy">
+              <figcaption class="screenshot-caption" data-i18n="proj3-shot-8">Página de proyecto de testing en tema oscuro e idioma español.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">© <span id="current-year"></span> Cassio Fagúndez</p>
+  </footer>
+
+  <script src="../../js/i18n.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
+
