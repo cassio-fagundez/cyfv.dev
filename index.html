@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio de Cassio Fagúndez - Fullstack Developer Jr y QA Analyst">
-  <title>Cassio Fagúndez | Website</title>
+  <title data-i18n="page-title-home">Cassio Fagúndez | Website</title>
   <link rel="icon" href="assets/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,7 +73,7 @@
             <span class="tag">QA Analyst / Tester Jr</span>
           </div>
         </div>
-        <a id="cv-download-link" href="assets/CV/CV_Cassio_Fagúndez_ES.pdf" class="btn btn-primary btn-cv" download target="_blank">
+        <a id="cv-download-link" href="assets/CV/CV_Cassio_Fagúndez_ES.pdf" class="btn btn-primary btn-cv" target="_blank">
           <span data-i18n="download-cv">Descargar CV</span>
           <span class="btn-cv-lang" data-i18n="download-cv-lang">en español</span>
         </a>
@@ -169,8 +169,7 @@
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <span class="timeline-date" data-i18n="edu2-date">2018 — 2024</span>
-                <h4 class="timeline-title" data-i18n="edu2-title">Tecnólogo en Análisis y Desarrollo de Sistemas — UTEC
-                  🇺🇾 | IFSUL 🇧🇷</h4>
+                <h4 class="timeline-title" data-i18n="edu2-title">Tecnólogo en Análisis y Desarrollo de Sistemas — UTEC | IFSUL</h4>
                 <p class="timeline-desc" data-i18n="edu2-desc">Carrera binacional enfocada en desarrollo de software,
                   bases de datos, análisis de sistemas y ciclo de vida del software.</p>
               </div>
@@ -209,20 +208,23 @@
               <span class="project-date" 2026 — FullStack Developer>2024</span>
               <h3 class="project-title" Personal Portfolio Website>Personal Portfolio Website</h3>
               <p class="project-desc" data-i18n="proj3-desc">Tercer proyecto de ejemplo.</p>
-              <a href="projects/ThisWebsite/ThisWebsite.html" class="btn btn-outline" data-i18n="saber-mas">Saber más</a>
+              <a href="projects/ThisWebsite" class="btn btn-outline" data-i18n="saber-mas">Saber
+                más</a>
             </div>
           </article>
           <article class="project-card" data-project-github="https://github.com/cassio-fagundez"
             data-project-desc-long-key="proj2-desc-long" data-project-date-key="proj2-date"
             data-project-images='["projects/VeterinariaGuauGuau/img/proyecto2-1.jpg","projects/VeterinariaGuauGuau/img/proyecto2-2.jpg","projects/VeterinariaGuauGuau/img/proyecto2-3.jpg","projects/VeterinariaGuauGuau/img/proyecto2-4.jpg","projects/VeterinariaGuauGuau/img/proyecto2-5.jpg"]'>
             <div class="project-image-wrap">
-              <img src="projects/VeterinariaGuauGuau/img/proyecto2-1.jpg" alt="Veterinaria Guau Guau" class="project-image">
+              <img src="projects/VeterinariaGuauGuau/img/proyecto2-1.jpg" alt="Veterinaria Guau Guau"
+                class="project-image">
             </div>
             <div class="project-info">
               <span class="project-date" 2025 — QA Analyst / Tester>2024</span>
               <h3 class="project-title" Veterinaria Guau Guau>Veterinaria Guau Guau</h3>
               <p class="project-desc" data-i18n="proj2-desc">App móvil para difusión de eventos</p>
-              <a href="projects/VeterinariaGuauGuau/VeterinariaGuauGuau.html" class="btn btn-outline" data-i18n="saber-mas">Saber más</a>
+              <a href="projects/VeterinariaGuauGuau" class="btn btn-outline"
+                data-i18n="saber-mas">Saber más</a>
             </div>
           </article>
           <article class="project-card" data-project-github="https://github.com/cassio-fagundez/ProjetoEventLink"
@@ -235,7 +237,7 @@
               <span class="project-date" 2024 — FullStack Mobile Developer>2023</span>
               <h3 class="project-title" EventLink>EventLink</h3>
               <p class="project-desc" data-i18n="proj1-desc">Trabajo WEB II</p>
-              <a href="projects/EventLink/EventLink.html" class="btn btn-outline" data-i18n="saber-mas">Saber más</a>
+              <a href="projects/EventLink" class="btn btn-outline" data-i18n="saber-mas">Saber más</a>
             </div>
           </article>
         </div>
@@ -247,34 +249,26 @@
       <div class="container">
         <h2 class="section-title" data-i18n="contact-title">Contacto</h2>
         <p class="contact-intro" data-i18n="contact-intro">Completa el formulario y me pondré en contacto contigo.</p>
-        <form class="contact-form" id="contact-form" action="https://formsubmit.co/cyfv.work@gmail.com" method="POST">
-
-          <!-- Configuración FormSubmit -->
-          <input type="hidden" name="_subject" value="CYFV.DEV — Nuevo mensaje">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_replyto" value="%email%">
-          <input type="hidden" name="_next" value="https://cassio-fagundez.github.io/cyfv.dev/thanks.html">
-          <input type="text" name="_honey" style="display:none">
+        <form class="contact-form" id="contact-form" novalidate>
 
           <div class="form-group required">
             <label for="name" data-i18n="form-name">Nombre</label>
-            <input type="text" id="name" name="Nombre" required autocomplete="name">
+            <input type="text" id="name" name="name" required autocomplete="name">
           </div>
 
           <div class="form-group required">
             <label for="email" data-i18n="form-email">Correo electrónico</label>
-            <input type="email" id="email" name="Email" required autocomplete="email">
+            <input type="email" id="email" name="email" required autocomplete="email">
           </div>
 
           <div class="form-group">
             <label for="subject" data-i18n="form-subject">Asunto (opcional)</label>
-            <input type="text" id="subject" name="Asunto">
+            <input type="text" id="subject" name="sbj">
           </div>
 
           <div class="form-group required">
             <label for="message" data-i18n="form-message">Mensaje</label>
-            <textarea id="message" name="Mensaje" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" data-i18n="form-submit">
@@ -292,6 +286,8 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript"> emailjs.init('RziuhrdWs-sf8NbV2') </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal Portfolio Website — Detalle del proyecto">
-  <title>Portfolio | Cassio Fagúndez</title>
+  <title data-i18n="page-title-portfolio">Portfolio | Cassio Fagúndez</title>
   <link rel="icon" href="../../assets/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
           </span>
         </label>
       </div>
-      <a href="../../index.html" class="header-logo" aria-label="Inicio">
+      <a href="../../" class="header-logo" aria-label="Inicio">
         <img src="../../assets/MYLOGO.png" alt="" width="50" height="50">
       </a>
       <div class="header-right">
@@ -44,7 +44,7 @@
     <section class="section project-page">
       <div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="../../index.html#portfolio" data-i18n="back-to-portfolio">← Volver al portfolio</a>
+          <a href="../../#portfolio" data-i18n="back-to-portfolio">← Volver al portfolio</a>
         </nav>
 
         <div class="project-hero">
@@ -52,14 +52,14 @@
           <p class="project-subtitle" 2026 — FullStack Developer>2026 — FullStack Developer</p>
           <div class="project-hero-actions">
             <a class="btn btn-primary" href="https://github.com/cassio-fagundez/cyfv.dev" target="_blank" rel="noopener noreferrer" data-i18n="project-link-source">Código fuente</a>
-            <a class="btn btn-outline" href="../../index.html" data-i18n="project-link-live">Ver live</a>
+            <a class="btn btn-outline" href="../../" data-i18n="project-link-live">Ver live</a>
           </div>
         </div>
 
         <div class="project-detail-grid">
           <article class="project-panel">
             <h2 class="project-panel-title" data-i18n="summary-title">1. Resumen del Proyecto</h2>
-            <p data-i18n="proj3-summary-p1">Este portfolio personal es el sitio web que estás navegando actualmente. Desarrollado con HTML5, CSS3 y JavaScript vanilla sin frameworks externos. Un proyecto simple para mostrar mis habilidades y experiencia de forma clara y accesible.</p>
+            <p data-i18n="proj3-summary-p1">Este portfolio personal es el sitio web que estás navegando actualmente. Desarrollado con HTML5, CSS3 y JavaScript vanilla sin frameworks externos. Un proyecto simple para mostrar mis habilidades y experiencia de forma clara y accesible. <span data-i18n="proj3-deployment">El sitio está desplegado en GitHub Pages con el dominio gestionado a través de Cloudflare.</span></p>
             
             <hr style="margin: var(--space-lg) 0; border: none; border-top: 1px solid var(--color-border); opacity: 0.5;">
             
@@ -68,7 +68,7 @@
               <li><strong data-i18n="proj3-i18n-label">Multi-idioma:</strong> <span data-i18n="proj3-feature-i18n">Soporte para Español, Portugués e Inglés con detección automática del navegador.</span></li>
               <li><strong data-i18n="proj3-theme-label">Tema Claro/Oscuro:</strong> <span data-i18n="proj3-feature-theme">Sistema de temas con persistencia de preferencias.</span></li>
               <li><strong data-i18n="proj3-responsive-label">Diseño Responsivo:</strong> <span data-i18n="proj3-feature-responsive">Adaptación a diferentes dispositivos.</span></li>
-              <li><strong data-i18n="proj3-contact-label">Formulario de Contacto:</strong> <span data-i18n="proj3-feature-contact">Formulario funcional con FormSubmit.</span></li>
+              <li><strong data-i18n="proj3-contact-label">Formulario de Contacto:</strong> <span data-i18n="proj3-feature-contact">Formulario funcional con EmailJS.</span></li>
               <li><strong data-i18n="proj3-portfolio-label">Portfolio Dinámico:</strong> <span data-i18n="proj3-feature-portfolio">Modales para visualizar detalles de proyectos.</span></li>
             </ul>
           </article>
@@ -91,7 +91,8 @@
                 <span class="chip" CSS3>CSS3</span>
                 <span class="chip" JavaScript>JavaScript</span>
                 <span class="chip" GitHub Pages>GitHub Pages</span>
-                <span class="chip">FormSubmit</span>
+                <span class="chip" Cloudflare>Cloudflare</span>
+                <span class="chip">EmailJS</span>
                 <span class="chip">Visual Studio Code</span>
                 <span class="chip">Windsurf</span>
               </div>

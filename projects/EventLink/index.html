@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="EventLink — Detalle del proyecto">
-  <title>EventLink | Cassio Fagúndez</title>
+  <title data-i18n="page-title-eventlink">EventLink | Cassio Fagúndez</title>
   <link rel="icon" href="../../assets/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
           </span>
         </label>
       </div>
-      <a href="../../index.html" class="header-logo" aria-label="Inicio">
+      <a href="../../" class="header-logo" aria-label="Inicio">
         <img src="../../assets/MYLOGO.png" alt="" width="50" height="50">
       </a>
       <div class="header-right">
@@ -62,7 +62,7 @@
     <section class="section project-page">
       <div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="../../index.html#portfolio" data-i18n="back-to-portfolio">← Volver al portfolio</a>
+          <a href="../../#portfolio" data-i18n="back-to-portfolio">← Volver al portfolio</a>
         </nav>
 
         <div class="project-hero">
@@ -103,11 +103,9 @@
 
             <h2 class="project-panel-title" data-i18n="proj1-stack-title">3. Stack Tecnológico</h2>
             <ul>
-              <li><strong data-i18n="proj1-lang-label">Lenguaje:</strong> <span Java (JDK 11).>Java (JDK
-                  11).</span></li>
-              <li><strong data-i18n="proj1-env-label">Entorno:</strong> <span Android Studio Ladybug (2024.2.1) | SDK 34.>Android Studio
-                  Ladybug (2024.2.1) | SDK 34.</span></li>
-              <li><strong Backend & Cloud (BaaS):>Backend & Cloud (BaaS):</strong>
+              <li><strong data-i18n="proj1-lang-label">Lenguaje:</strong> <span data-i18n="proj1-lang-content">Java (JDK 11).</span></li>
+              <li><strong data-i18n="proj1-env-label">Entorno:</strong> <span data-i18n="proj1-env-content">Android Studio Ladybug (2024.2.1) | SDK 34.</span></li>
+              <li><strong data-i18n="proj1-backend-label">Backend & Cloud (BaaS):</strong>
                 <ul>
                   <li data-i18n="proj1-stack-backend-item1">Firebase Authentication (v23.1.0): Gestión de usuarios y
                     seguridad.</li>
@@ -115,9 +113,7 @@
                     datos NoSQL en tiempo real.</li>
                 </ul>
               </li>
-              <li><strong data-i18n="proj1-maps-label">Mapas y Geo-servicios:</strong> <span
-                  data-i18n="proj1-stack-maps">OSMDroid (v6.1.15) (OpenStreetMap) para una implementación de mapas de
-                  código abierto y alto rendimiento.</span></li>
+              <li><strong data-i18n="proj1-maps-label">Mapas y Geo-servicios:</strong> <span data-i18n="proj1-stack-maps">OSMDroid (v6.1.15) (OpenStreetMap) para una implementación de mapas de código abierto y alto rendimiento.</span></li>
               <li><strong data-i18n="proj1-methodology-label">Metodología:</strong> <span
                   data-i18n="proj1-stack-methodology">Desarrollo Ágil (Scrum) con un enfoque Iterativo e
                   Incremental.</span></li>
@@ -259,7 +255,7 @@
   </main>
 
   <footer class="site-footer">
-    <p class="footer-text"> 2024 Cassio Fagúndez</p>
+    <p class="footer-text">&copy; <span id="current-year"></span> Cassio Fagúndez</p>
   </footer>
 
   <script src="../../js/i18n.js"></script>

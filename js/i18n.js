@@ -7,6 +7,14 @@
 
   var translations = {
     es: {
+      // Títulos de página
+      'page-title-home': 'Cassio Fagúndez | Website',
+      'page-title-eventlink': 'EventLink | Cassio Fagúndez',
+      'page-title-veterinaria': 'Veterinaria Guau Guau | Cassio Fagúndez',
+      'page-title-portfolio': 'Portfolio | Cassio Fagúndez',
+      'page-title-thanks': 'Gracias | Cassio Fagúndez',
+      'page-title-error': 'Error | Cassio Fagúndez',
+      
       // index.html
       'download-cv': 'Descargar CV',
       'download-cv-lang': 'en español',
@@ -47,6 +55,10 @@
       'form-subject': 'Asunto',
       'form-message': 'Mensaje',
       'form-submit': 'Enviar mensaje',
+      'validation-name-required': 'Por favor, ingresa tu nombre completo (mínimo 2 caracteres)',
+      'validation-email-invalid': 'Por favor, ingresa un correo electrónico válido',
+      'validation-message-min': 'Por favor, escribe un mensaje más detallado (mínimo 10 caracteres)',
+      'validation-message-max': 'El mensaje es demasiado largo. Por favor, reduce el contenido a menos de 2000 caracteres',
       'theme-dark': 'Oscuro',
       'theme-light': 'Claro',
       'theme-switch-aria': 'Cambiar modo claro u oscuro',
@@ -60,6 +72,23 @@
       'thanks-portfolio-title': 'Explora mi trabajo',
       'thanks-portfolio': 'Mientras esperas mi respuesta, te invito a conocer más sobre mis proyectos, habilidades y experiencia en mi portfolio principal.',
       'thanks-view-portfolio': 'Ver mi portfolio',
+
+      // error.html
+      'back-to-home': '← Volver al inicio',
+      'error-title': '¡Ups! Algo salió mal',
+      'error-subtitle': 'No se pudo enviar tu mensaje',
+      'error-what-happened': '¿Qué pudo haber pasado?',
+      'error-reason-1': 'El formulario fue enviado incorrectamente',
+      'error-reason-2': 'Hay un problema temporal con el servicio de envío',
+      'error-reason-3': 'La información ingresada no es válida',
+      'error-reason-4': 'Se excedió el límite de envíos permitidos',
+      'error-alternative': 'Si el problema persiste, puedes contactarme directamente a través de mi correo electrónico o LinkedIn.',
+      'error-what-now': '¿Qué puedes hacer ahora?',
+      'error-step-1': '<strong>1. Intenta nuevamente:</strong> Vuelve al formulario y envía tu mensaje otra vez.',
+      'error-step-2': '<strong>2. Verifica la información:</strong> Asegúrate de que todos los campos estén completos correctamente.',
+      'error-step-3': '<strong>3. Contacto directo:</strong> Si el problema persiste, usa los métodos de contacto proporcionados.',
+      'error-try-again': 'Intentar nuevamente',
+      'error-back-home': 'Volver al inicio',
 
       // EventLink.html
       'back-to-portfolio': '← Volver al portfolio',
@@ -184,7 +213,7 @@
       'proj2-trello-link': 'Tablero de Trello durante Etapa 2',
 
       // ThisWebsite.html
-      'proj3-summary-p1': 'Este portfolio personal es el sitio web que estás navegando actualmente. Desarrollado con HTML5, CSS3 y JavaScript vanilla sin frameworks externos. Un proyecto simple para mostrar mis habilidades y experiencia de forma clara y accesible.',
+      'proj3-summary-p1': 'Este portfolio personal es el sitio web que estás navegando actualmente. Desarrollado con HTML5, CSS3 y JavaScript vanilla sin frameworks externos. Un proyecto simple para mostrar mis habilidades y experiencia de forma clara y accesible. <span data-i18n="proj3-deployment">El sitio está desplegado en GitHub Pages con el dominio gestionado a través de Cloudflare.</span>',
       'proj3-features-title': '2. Funcionalidades',
       'proj3-i18n-label': 'Multi-idioma:',
       'proj3-feature-i18n': 'Soporte para Español, Portugués e Inglés con detección automática del navegador.',
@@ -193,9 +222,9 @@
       'proj3-responsive-label': 'Diseño Responsivo:',
       'proj3-feature-responsive': 'Adaptación a diferentes dispositivos.',
       'proj3-contact-label': 'Formulario de Contacto:',
-      'proj3-feature-contact': 'Formulario funcional con FormSubmit.',
-      'proj3-portfolio-label': 'Portfolio Dinámico:',
-      'proj3-feature-portfolio': 'Modales para visualizar detalles de proyectos.',
+      'proj3-feature-contact': 'Formulario funcional con EmailJS.',
+      'proj3-portfolio-label': 'Portfolio:',
+      'proj3-feature-portfolio': 'Sección de proyectos con enlaces directos a páginas detalladas.',
       'proj3-context-desc': 'Proyecto personal de portfolio profesional.',
       'proj3-task-1': 'Desarrollo frontend',
       'proj3-task-2': 'Sistema multi-idioma',
@@ -211,10 +240,19 @@
       'proj3-shot-5': 'Página de contacto exitoso en tema claro e idioma inglés.',
       'proj3-shot-6': 'Página de contacto exitoso en tema oscuro e idioma portugués.',
       'proj3-shot-7': 'Página de proyecto de desarrollo en tema claro e idioma portugués.',
-      'proj3-shot-8': 'Página de proyecto de testing en tema oscuro e idioma español.'
+      'proj3-shot-8': 'Página de proyecto de testing en tema oscuro e idioma español.',
+      'proj3-deployment': 'El sitio está desplegado en GitHub Pages con el dominio gestionado a través de Cloudflare.'
 
     },
     pt: {
+      // Títulos de página
+      'page-title-home': 'Cassio Fagúndez | Website',
+      'page-title-eventlink': 'EventLink | Cassio Fagúndez',
+      'page-title-veterinaria': 'Veterinaria Guau Guau | Cassio Fagúndez',
+      'page-title-portfolio': 'Portfolio | Cassio Fagúndez',
+      'page-title-thanks': 'Obrigado | Cassio Fagúndez',
+      'page-title-error': 'Erro | Cassio Fagúndez',
+      
       // index.html
       'download-cv': 'Baixar CV',
       'download-cv-lang': 'em português',
@@ -255,6 +293,10 @@
       'form-subject': 'Assunto',
       'form-message': 'Mensagem',
       'form-submit': 'Enviar mensagem',
+      'validation-name-required': 'Por favor, digite seu nome completo (mínimo 2 caracteres)',
+      'validation-email-invalid': 'Por favor, digite um e-mail válido',
+      'validation-message-min': 'Por favor, escreva uma mensagem mais detalhada (mínimo 10 caracteres)',
+      'validation-message-max': 'A mensagem é muito longa. Por favor, reduza o conteúdo para menos de 2000 caracteres',
       'theme-dark': 'Escuro',
       'theme-light': 'Claro',
       'theme-switch-aria': 'Alternar modo claro ou escuro',
@@ -268,6 +310,23 @@
       'thanks-portfolio-title': 'Explore meu trabalho',
       'thanks-portfolio': 'Enquanto espera minha resposta, convido você a conhecer mais sobre meus projetos, habilidades e experiências em meu portfólio principal.',
       'thanks-view-portfolio': 'Ver meu portfólio',
+
+      // error.html
+      'back-to-home': '← Voltar ao início',
+      'error-title': 'Ops! Algo deu errado',
+      'error-subtitle': 'Não foi possível enviar sua mensagem',
+      'error-what-happened': 'O que pode ter acontecido?',
+      'error-reason-1': 'O formulário foi enviado incorretamente',
+      'error-reason-2': 'Há um problema temporário com o serviço de envio',
+      'error-reason-3': 'As informações inseridas não são válidas',
+      'error-reason-4': 'Foi excedido o limite de envios permitidos',
+      'error-alternative': 'Se o problema persistir, você pode me contatar diretamente pelo meu e-mail ou LinkedIn.',
+      'error-what-now': 'O que você pode fazer agora?',
+      'error-step-1': '<strong>1. Tente novamente:</strong> Volte ao formulário e envie sua mensagem novamente.',
+      'error-step-2': '<strong>2. Verifique as informações:</strong> Certifique-se de que todos os campos estejam preenchidos corretamente.',
+      'error-step-3': '<strong>3. Contato direto:</strong> Se o problema persistir, use os métodos de contato fornecidos.',
+      'error-try-again': 'Tentar novamente',
+      'error-back-home': 'Voltar ao início',
 
       // EventLink.html
       'back-to-portfolio': '← Voltar ao portfólio',
@@ -392,7 +451,7 @@
       'proj2-trello-link': 'Quadro Trello durante Etapa 2',
       
       // ThisWebsite.html
-      'proj3-summary-p1': 'Este portfólio pessoal é o site que você está navegando atualmente. Desenvolvido com HTML5, CSS3 e JavaScript vanilla sem frameworks externos. Um projeto simples para mostrar minhas habilidades e experiência de forma clara e acessível.',
+      'proj3-summary-p1': 'Este portfólio pessoal é o site que você está navegando atualmente. Desenvolvido com HTML5, CSS3 e JavaScript vanilla sem frameworks externos. Um projeto simples para mostrar minhas habilidades e experiência de forma clara e acessível. <span data-i18n="proj3-deployment">O site está implantado no GitHub Pages com o domínio gerenciado através do Cloudflare.</span>',
       'proj3-features-title': '2. Funcionalidades',
       'proj3-i18n-label': 'Multi-idioma:',
       'proj3-feature-i18n': 'Suporte para Espanhol, Português e Inglês com detecção automática do navegador.',
@@ -401,9 +460,9 @@
       'proj3-responsive-label': 'Design Responsivo:',
       'proj3-feature-responsive': 'Adaptação a diferentes dispositivos.',
       'proj3-contact-label': 'Formulário de Contato:',
-      'proj3-feature-contact': 'Formulário funcional com FormSubmit.',
-      'proj3-portfolio-label': 'Portfólio Dinâmico:',
-      'proj3-feature-portfolio': 'Modais para visualizar detalhes de projetos.',
+      'proj3-feature-contact': 'Formulário funcional com EmailJS.',
+      'proj3-portfolio-label': 'Portfólio:',
+      'proj3-feature-portfolio': 'Seção de projetos com links diretos para páginas detalhadas.',
       'proj3-context-desc': 'Projeto pessoal de portfólio profissional.',
       'proj3-task-1': 'Desenvolvimento frontend',
       'proj3-task-2': 'Sistema multi-idioma',
@@ -419,10 +478,19 @@
       'proj3-shot-5': 'Página de contato bem-sucedido com tema claro e idioma inglês.',
       'proj3-shot-6': 'Página de contato bem-sucedido com tema escuro e idioma português.',
       'proj3-shot-7': 'Página de projeto de desenvolvimento com tema claro e idioma português.',
-      'proj3-shot-8': 'Página de projeto de testes com tema escuro e idioma espanhol.'
+      'proj3-shot-8': 'Página de projeto de testes com tema escuro e idioma espanhol.',
+      'proj3-deployment': 'O site está implantado no GitHub Pages com o domínio gerenciado através do Cloudflare.'
       
     },
     en: {
+      // Títulos de página
+      'page-title-home': 'Cassio Fagúndez | Website',
+      'page-title-eventlink': 'EventLink | Cassio Fagúndez',
+      'page-title-veterinaria': 'Veterinaria Guau Guau | Cassio Fagúndez',
+      'page-title-portfolio': 'Portfolio | Cassio Fagúndez',
+      'page-title-thanks': 'Thank You | Cassio Fagúndez',
+      'page-title-error': 'Error | Cassio Fagúndez',
+      
       // index.html
       'download-cv': 'Download CV',
       'download-cv-lang': 'in english',
@@ -463,6 +531,10 @@
       'form-subject': 'Subject',
       'form-message': 'Message',
       'form-submit': 'Send message',
+      'validation-name-required': 'Please enter your full name (minimum 2 characters)',
+      'validation-email-invalid': 'Please enter a valid email address',
+      'validation-message-min': 'Please write a more detailed message (minimum 10 characters)',
+      'validation-message-max': 'Message is too long. Please reduce content to less than 2000 characters',
       'theme-dark': 'Dark',
       'theme-light': 'Light',
       'theme-switch-aria': 'Toggle light or dark mode',
@@ -476,6 +548,23 @@
       'thanks-portfolio-title': 'Explore my work',
       'thanks-portfolio': 'While you wait for my response, I invite you to learn more about my projects, skills, and experience in my main portfolio.',
       'thanks-view-portfolio': 'View my portfolio',
+
+      // error.html
+      'back-to-home': '← Back to home',
+      'error-title': 'Oops! Something went wrong',
+      'error-subtitle': 'Your message could not be sent',
+      'error-what-happened': 'What could have happened?',
+      'error-reason-1': 'The form was submitted incorrectly',
+      'error-reason-2': 'There is a temporary problem with the sending service',
+      'error-reason-3': 'The entered information is not valid',
+      'error-reason-4': 'The limit of allowed submissions has been exceeded',
+      'error-alternative': 'If the problem persists, you can contact me directly through my email or LinkedIn.',
+      'error-what-now': 'What can you do now?',
+      'error-step-1': '<strong>1. Try again:</strong> Go back to the form and send your message again.',
+      'error-step-2': '<strong>2. Check the information:</strong> Make sure all fields are filled out correctly.',
+      'error-step-3': '<strong>3. Direct contact:</strong> If the problem persists, use the provided contact methods.',
+      'error-try-again': 'Try again',
+      'error-back-home': 'Back to home',
 
       // EventLink.html
       'back-to-portfolio': '← Back to portfolio',
@@ -600,7 +689,7 @@
       'proj2-trello-link': 'Trello Board during Stage 2',
       
       // ThisWebsite.html
-      'proj3-summary-p1': 'This personal portfolio is the website you are currently browsing. Developed with HTML5, CSS3 and vanilla JavaScript without external frameworks. A simple project to showcase my skills and experience in a clear and accessible way.',
+      'proj3-summary-p1': 'This personal portfolio is the website you are currently browsing. Developed with HTML5, CSS3 and vanilla JavaScript without external frameworks. A simple project to showcase my skills and experience in a clear and accessible way. <span data-i18n="proj3-deployment">The site is deployed on GitHub Pages with the domain managed through Cloudflare.</span>',
       'proj3-features-title': '2. Features',
       'proj3-i18n-label': 'Multi-language:',
       'proj3-feature-i18n': 'Support for Spanish, Portuguese and English with automatic browser detection.',
@@ -609,9 +698,9 @@
       'proj3-responsive-label': 'Responsive Design:',
       'proj3-feature-responsive': 'Adaptation to different devices.',
       'proj3-contact-label': 'Contact Form:',
-      'proj3-feature-contact': 'Functional form with FormSubmit.',
-      'proj3-portfolio-label': 'Dynamic Portfolio:',
-      'proj3-feature-portfolio': 'Modals to visualize project details.',
+      'proj3-feature-contact': 'Functional form with EmailJS.',
+      'proj3-portfolio-label': 'Portfolio:',
+      'proj3-feature-portfolio': 'Projects section with direct links to detailed pages.',
       'proj3-context-desc': 'Personal professional portfolio project.',
       'proj3-task-1': 'Frontend development',
       'proj3-task-2': 'Multi-language system',
@@ -627,7 +716,8 @@
       'proj3-shot-5': 'Successful contact page with light theme and English language.',
       'proj3-shot-6': 'Successful contact page with dark theme and Portuguese language.',
       'proj3-shot-7': 'Development project page with light theme and Portuguese language.',
-      'proj3-shot-8': 'Testing project page with dark theme and Spanish language.'
+      'proj3-shot-8': 'Testing project page with dark theme and Spanish language.',
+      'proj3-deployment': 'The site is deployed on GitHub Pages with the domain managed through Cloudflare.'
       
     }
   };
@@ -672,6 +762,8 @@
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           if (el.placeholder !== undefined) el.placeholder = t[key];
           else if (el.type === 'submit' || el.type === 'button') el.value = t[key];
+        } else if (el.tagName === 'TITLE') {
+          el.textContent = t[key];
         } else {
           el.innerHTML = t[key];
         }

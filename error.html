@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gracias por contactarme — Cassio Fagúndez">
-  <title data-i18n="page-title-thanks">Gracias | Cassio Fagúndez</title>
+  <meta name="description" content="Error al enviar mensaje — Cassio Fagúndez">
+  <title data-i18n="page-title-error">Error | Cassio Fagúndez</title>
   <link rel="icon" href="assets/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
         </label>
       </div>
       <a href="/" class="header-logo" aria-label="Inicio">
-        <img src="assets/MYLOGO.png" alt="" width="50" height="50">
+        <img src="assets/MYLOGO.png" alt="Cassio Fagúndez Logo" width="50" height="50">
       </a>
       <div class="header-right">
         <div class="lang-switcher">
@@ -48,14 +48,21 @@
         </nav>
 
         <div class="project-hero">
-          <h1 class="project-title-xl" data-i18n="thanks-title">¡Gracias por tu mensaje!</h1>
-          <p class="project-subtitle" data-i18n="thanks-subtitle">Tu mensaje ha sido enviado exitosamente</p>
+          <h1 class="project-title-xl" data-i18n="error-title">¡Ups! Algo salió mal</h1>
+          <p class="project-subtitle" data-i18n="error-subtitle">No se pudo enviar tu mensaje</p>
         </div>
 
         <div class="project-detail-grid">
           <article class="project-panel">
-            <h2 class="project-panel-title" data-i18n="thanks-contact-title">¿Necesitas contactarme urgentemente?</h2>
-            <p class="project-long-desc" data-i18n="thanks-contact">Si tu consulta es urgente, también puedes contactarme directamente a través de mi correo electrónico o LinkedIn.</p>
+            <h2 class="project-panel-title" data-i18n="error-what-happened">¿Qué pudo haber pasado?</h2>
+            <ul class="project-list">
+              <li data-i18n="error-reason-1">El formulario fue enviado incorrectamente</li>
+              <li data-i18n="error-reason-2">Hay un problema temporal con el servicio de envío</li>
+              <li data-i18n="error-reason-3">La información ingresada no es válida</li>
+              <li data-i18n="error-reason-4">Se excedió el límite de envíos permitidos</li>
+            </ul>
+            <div style="height: var(--space-lg)"></div>
+            <p class="project-long-desc" data-i18n="error-alternative">Si el problema persiste, puedes contactarme directamente a través de mi correo electrónico o LinkedIn.</p>
             <div style="height: var(--space-lg)"></div>
             <div class="project-hero-actions" style="flex-direction: column; gap: var(--space-md); align-items: center;">
               <div class="project-hero-actions" style="gap: var(--space-sm);">
@@ -74,11 +81,16 @@
           </article>
 
           <aside class="project-panel">
-            <h2 class="project-panel-title" data-i18n="thanks-portfolio-title">Explora mi trabajo</h2>
-            <p class="project-long-desc" data-i18n="thanks-portfolio">Mientras esperas mi respuesta, te invito a conocer más sobre mis proyectos, habilidades y experiencia en mi portfolio principal.</p>
+            <h2 class="project-panel-title" data-i18n="error-what-now">¿Qué puedes hacer ahora?</h2>
+            <div class="project-long-desc">
+              <p data-i18n="error-step-1"><strong>1. Intenta nuevamente:</strong> Vuelve al formulario y envía tu mensaje otra vez.</p>
+              <p data-i18n="error-step-2"><strong>2. Verifica la información:</strong> Asegúrate de que todos los campos estén completos correctamente.</p>
+              <p data-i18n="error-step-3"><strong>3. Contacto directo:</strong> Si el problema persiste, usa los métodos de contacto proporcionados.</p>
+            </div>
             <div style="height: var(--space-lg)"></div>
-            <div class="project-hero-actions" style="justify-content: center;">
-              <a href="/#portfolio" class="btn btn-primary" data-i18n="thanks-view-portfolio">Ver mi portfolio</a>
+            <div class="project-hero-actions" style="justify-content: center; gap: var(--space-md);">
+              <a href="/#contact" class="btn btn-primary" data-i18n="error-try-again">Intentar nuevamente</a>
+              <a href="/" class="btn btn-outline" data-i18n="error-back-home">Volver al inicio</a>
             </div>
           </aside>
         </div>
